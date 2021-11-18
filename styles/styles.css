@@ -1,4 +1,5 @@
 /* Fonts */
+
 @font-face {
   font-family: "Rubik";
   font-style: normal;
@@ -22,7 +23,6 @@
   font-display: swap;
   src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
 }
-
 
 @font-face {
   font-family: "Raleway";
@@ -1083,6 +1083,7 @@ body {
 }
 
 /* Two small blocks */
+
 .index-columns {
   margin-bottom: 86px;
 }
@@ -1283,7 +1284,6 @@ body {
   border-color: #000000;
 }
 
-
 .subscribe-btn {
   margin-right: 136px;
   font-family: "Raleway", sans-serif;
@@ -1480,10 +1480,6 @@ body {
   opacity: 0.3;
 }
 
-.social-link:last-child {
-  margin-right: 0;
-}
-
 .footer-left-column {
   margin-right: 103px;
 }
@@ -1518,9 +1514,10 @@ body {
 }
 
 /* Modal */
+
 .modal-delivery-form {
   display: none;
-  background-color: rgba(229,229,229, 0.5)
+  background-color: rgba(229, 229, 229, 0.5);
 }
 
 .modal-open {
@@ -1538,7 +1535,7 @@ body {
   padding: 63px 70px 76px 70px;
   background-color: #fcfcfc;
   border: 10px solid #000000;
-  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .delivery-form {
@@ -1692,7 +1689,7 @@ body {
   line-height: 20px;
   color: #ffffff;
   background-color: #000000;
-  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
 }
 
 .tooltip-hint::before {
@@ -1927,6 +1924,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Range */
+
 .range {
   max-width: 200px;
   overflow: visible;
@@ -1990,6 +1988,7 @@ input::-webkit-inner-spin-button {
 .catalog-filter-label {
   display: flex;
   margin-right: 29px;
+  font-size: 15px;
   line-height: 22px;
   opacity: 0.3;
 }
@@ -2260,6 +2259,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Mark */
+
 .control-mark {
   position: absolute;
   top: 2px;
@@ -2314,8 +2314,8 @@ input::-webkit-inner-spin-button {
   border-color: #af4fff;
 }
 
-
 /* Radio */
+
 .control-input[type="radio"] + .control-mark {
   border-radius: 50%;
 }
@@ -2461,10 +2461,6 @@ input::-webkit-inner-spin-button {
 
 .sorting-arrows {
   display: flex;
-}
-
-.catalog-filter-label {
-  font-size: 15px;
 }
 
 .catalog-filter .catalog-filter-group:nth-child(2) {
