@@ -32,8 +32,38 @@
           <li class="user-list-iteme">
             <a class="user-list-btn compare">Сравнить</a>
           </li>
-          <li class="user-list-item">
+          <li class="user-list-item cart-item">
+            <span class="counter">2</span>
             <button class="user-list-btn cart">Корзина</button>
+            <div class="bucket-popup">
+              <ul class="bucket-products-list">
+                <li class="bucket-list-item">
+                  <img class="bucket-image" src="./img/product-1.jpg" alt="Любительская селфи-палка." width="41" height="43">
+                  <p class="bucket-item-text">Любительская селфи-палка</p>
+                  <button class="bucket-close-btn" type="button">
+                    <span class="visually-hidden">Удалить товар из корзины</span>
+                  </button>
+                </li>
+                <li class="bucket-list-item">
+                  <img class="bucket-image" src="./img/product-2.jpg" alt="Профессиональная
+                  селфи-палка." width="41" height="43">
+                  <p class="bucket-item-text">Профессиональная
+                    селфи-палка</p>
+                  <button class="bucket-close-btn" type="button">
+                    <span class="visually-hidden">Удалить товар из корзины</span>
+                  </button>
+                </li>
+              </ul>
+              <ul class="totals-list">
+                <li class="totals-item">
+                  <p class="totals-text">Товаров: <span class="totals-number">2</span></p>
+                </li>
+                <li class="totals-item">
+                  <p class="totals-text">Сумма: <span class="totals-price">2000 ₽</span></p>
+                </li>
+              </ul>
+              <button class="bucket-btn" type="button">Открыть корзину</button>
+            </div>
           </li>
         </ul>
         <nav class="main-nav">
@@ -76,7 +106,7 @@
         </nav>
       </div>
     </header>
-    <main class="main-catalog">
+    <main class="main-index">
       <header class="inner-site-navigation">
         <div class="catalog-container">
           <h1 class="catalog-heading">Моноподы для селфи</h1>
@@ -218,28 +248,28 @@
             <ul class="product-list list">
               <li class="product-card">
                 <a class="card vr-image" href="#">
-                  <img class="card-image" src="img/product-1.jpg" alt="Любительская селфи-палка." width="360" height="360">
+                  <img class="card-image" src="img/product-1.jpg" alt="Любительская селфи-палка." width="360" height="380">
                   <p class="product-desc">Любительская селфи-палка <span class="product-price">500 ₽</span></p>
                   <span class="link-btn filter-btn card-btn">Подробнее</span>
                 </a>
               </li>
               <li class="product-card">
                 <a class="card" href="#">
-                  <img class="card-image" src="img/product-2.jpg" alt="Профессиональная селфи-палка." width="360" height="360">
+                  <img class="card-image" src="img/product-2.jpg" alt="Профессиональная селфи-палка." width="360" height="380">
                   <p class="product-desc">Профессиональная <br> селфи-палка <span class="product-price">1 500 ₽</span></p>
                   <span class="link-btn filter-btn card-btn">Подробнее</span>
                 </a>
               </li>
               <li class="product-card">
                 <a class="card" href="#">
-                  <img class="card-image" src="img/product-3.jpg" alt="Непотопляемая селфи-палка." width="360" height="360">
+                  <img class="card-image" src="img/product-3.jpg" alt="Непотопляемая селфи-палка." width="360" height="380">
                   <p class="product-desc">Непотопляемая <br> селфи-палка <span class="product-price">2 500 ₽</span></p>
                   <span class="link-btn filter-btn card-btn">Подробнее</span>
                 </a>
               </li>
               <li class="product-card new-item">
                 <a class="card" href="#">
-                  <img class="card-image" src="img/product-4.jpg" alt="Селфи-палка «Следуй за мной." width="360" height="360">
+                  <img class="card-image" src="img/product-4.jpg" alt="Селфи-палка «Следуй за мной." width="360" height="380">
                   <p class="product-desc">Селфи-палка «Следуй за <br> мной» <span class="product-price">4 900 ₽</span></p>
                   <span class="link-btn filter-btn card-btn">Подробнее</span>
                 </a>
@@ -356,29 +386,5 @@
       </div>
     </div>
     </footer>
-    <!-- <script>
-      function getTextNodesIn(elem, opt_fnFilter) {
-  var textNodes = [];
-  if (elem) {
-    for (var nodes = elem.childNodes, i = nodes.length; i--;) {
-      var node = nodes[i],
-        nodeType = node.nodeType;
-      if (nodeType == 3) {
-        if (!opt_fnFilter || opt_fnFilter(node, elem)) {
-          if (node.data.trim() !== '') {
-            textNodes.push(node.data.trim() !== '' ? node : '');
-
-          }
-        }
-      } else if (nodeType == 1 || nodeType == 9 || nodeType == 11) {
-        textNodes = textNodes.concat(getTextNodesIn(node, opt_fnFilter));
-      }
-    }
-  }
-  return textNodes;
-}
-
-getTextNodesIn(document.body).forEach((item) => { item.textContent = "У меня есть несколько клиентов, которые записались ко мне на стрижку, не успев даже зайти в салон." })
-    </script> -->
   </body>
 </html>
